@@ -5,6 +5,11 @@ server:
 spring:
   application:
     name: es-server
+  elasticsearch:
+    uris: 192.168.60.130:9200
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
 eureka:
   client:
     service-url:
