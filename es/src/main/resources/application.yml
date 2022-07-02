@@ -7,6 +7,12 @@ spring:
     name: es-server
   elasticsearch:
     uris: 192.168.60.130:9200
+  datasource:
+    druid:
+      url: jdbc:mysql://192.168.60.130:3306/mycode?useSSL=false&serverTimezone=Asia/Shanghai&characterEncoding=utf-8&autoReconnect=true
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      username: root
+      password: root
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
